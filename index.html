@@ -1,51 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Code du site AST Gaming</title>
-<style>
-:root{--bg:#fff;--tx:#161616;--mut:#777;--card:#fffaf0;--line:#ecdfb8;--acc:#c9a227;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root{--bg:#121212;--tx:#f2f2f2;--mut:#aaa;--card:#1d1a12;--line:#4a3f1c}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.45}
-.w{max-width:640px;margin:0 auto;padding:20px 16px 60px}
-h1{font-size:1.5rem;margin:6px 0 4px}
-p{color:var(--mut);margin:4px 0 14px}
-.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:14px 0}
-.st{display:flex;gap:10px}
-.st div{flex:1;text-align:center;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 4px}
-.st b{display:block;font-size:1.15rem}
-.st small{color:var(--mut)}
-button{width:100%;border:0;border-radius:14px;padding:18px;font-size:1.1rem;font-weight:800;cursor:pointer;color:#2a1f00;background:linear-gradient(135deg,#f0d27a,#c9a227);margin:6px 0}
-#msg{min-height:1.4em;font-weight:700;margin-top:8px}
-ol{padding-left:20px;margin:6px 0}
-pre{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:.72rem;white-space:pre-wrap;word-break:break-all;max-height:200px;overflow:auto;margin:8px 0 0}
-</style>
-</head>
-<body>
-<div class="w">
-<h1>📋 Code du site AST Gaming</h1>
-<p>Un seul bouton pour tout copier.</p>
-<div class="box">
-<div class="st"><div><b id="n1">…</b><small>caractères</small></div><div><b id="n2">…</b><small>Ko</small></div><div><b id="n3">…</b><small>lignes</small></div></div>
-<button id="b" onclick="copyAll()">📋 Copier tout le code</button>
-<div id="msg"></div>
-</div>
-<div class="box">
-<b>Que faire ensuite ?</b>
-<ol><li>Appuyez sur « Copier tout le code ».</li><li>Collez dans un fichier texte et nommez-le <b>index.html</b>.</li><li>Ouvrez-le dans un navigateur, ou envoyez-le sur un hébergement (Netlify, GitHub Pages…).</li></ol>
-</div>
-<div class="box"><b>Aperçu (début du code)</b><pre id="pv"></pre></div>
-</div>
-<script id="src" type="text/plain">
-<!DOCTYPE html>
 <html lang="fr" data-theme="wb">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>var __t=null;try{__t=JSON.parse(localStorage.getItem("mg_theme"))}catch(e){}document.documentElement.setAttribute("data-theme",__t==="gold"?"gold":(__t==="bw"?"bw":"wb"));<\/script>
-<script src="config.js"><\/script>
+<script>var __t=null;try{__t=JSON.parse(localStorage.getItem("mg_theme"))}catch(e){}document.documentElement.setAttribute("data-theme",__t==="gold"?"gold":(__t==="bw"?"bw":"wb"));</script>
+<script src="config.js"></script>
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="Souris, claviers, casques et tapis gaming au Mali. Livraison offerte dès 75 000 FCFA. Paiement Orange Money.">
 <link rel="manifest" href="manifest.webmanifest">
@@ -63,7 +22,7 @@ pre{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding
 <meta property="og:image" content="https://astgaming.netlify.app/og-image.png">
 <meta property="og:url" content="https://astgaming.netlify.app/">
 <meta name="twitter:card" content="summary_large_image">
-<title>AST Gaming – Souris, claviers, casques<\/title>
+<title>AST Gaming – Souris, claviers, casques</title>
 <style>
 :root{color-scheme:light;--bg:#fff;--line:#e9e9e9;--tx:#161616;--mut:#777;--acc:#c9a227;--acc2:#8f6b0c;--om:#ff7900;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
@@ -288,74 +247,74 @@ html[data-theme="wb"] .toast{background:#161616;color:#fff}
 html[data-theme="wb"] .bd{background:#161616;color:#fff}
 html[data-theme="wb"] .mk polygon{fill:#fff;stroke:#161616}
 html[data-theme="wb"] .mk text{fill:#161616}
-<\/style>
-<\/head>
+</style>
+</head>
 <body>
-<div class="bar"><button onclick="ann(-1)" aria-label="Précédent">‹<\/button><span id="ann"><\/span><button onclick="ann(1)" aria-label="Suivant">›<\/button><\/div>
+<div class="bar"><button onclick="ann(-1)" aria-label="Précédent">‹</button><span id="ann"></span><button onclick="ann(1)" aria-label="Suivant">›</button></div>
 <div class="w">
-<div class="top"><button class="ic" onclick="menu(1)" aria-label="Menu">☰<\/button><div class="logo lg"><svg class="mk" viewBox="0 0 60 60" width="42" height="42" aria-hidden="true"><polygon points="30,3 53.4,16.5 53.4,43.5 30,57 6.6,43.5 6.6,16.5" fill="#fff" stroke="#C9A227" stroke-width="3.5" stroke-linejoin="round"/><text x="30" y="35" text-anchor="middle" font-family="Arial Narrow,Impact,sans-serif" font-style="italic" font-weight="900" font-size="17" fill="#8f6b0c">AST<\/text><\/svg><span>Gaming<\/span><\/div><span class="sp"><\/span><button class="ic" id="pbtn" onclick="promoBox(1)" aria-label="Code promo">🏷️<\/button><a class="ic" target="_blank" rel="noopener" href="https://wa.me/22379303841" aria-label="WhatsApp">🎧<\/a><\/div>
+<div class="top"><button class="ic" onclick="menu(1)" aria-label="Menu">☰</button><div class="logo lg"><svg class="mk" viewBox="0 0 60 60" width="42" height="42" aria-hidden="true"><polygon points="30,3 53.4,16.5 53.4,43.5 30,57 6.6,43.5 6.6,16.5" fill="#fff" stroke="#C9A227" stroke-width="3.5" stroke-linejoin="round"/><text x="30" y="35" text-anchor="middle" font-family="Arial Narrow,Impact,sans-serif" font-style="italic" font-weight="900" font-size="17" fill="#8f6b0c">AST</text></svg><span>Gaming</span></div><span class="sp"></span><button class="ic" id="pbtn" onclick="promoBox(1)" aria-label="Code promo">🏷️</button><a class="ic" target="_blank" rel="noopener" href="https://wa.me/22379303841" aria-label="WhatsApp">🎧</a></div>
 
 <div id="v-shop">
-<div class="cd" id="cd" style="display:none"><div id="cd-t"><\/div><div class="cdn"><span><b id="cd-d">00<\/b>jours<\/span><span><b id="cd-h">00<\/b>heures<\/span><span><b id="cd-m">00<\/b>min<\/span><span><b id="cd-s">00<\/b>sec<\/span><\/div><button class="btn" onclick="useOffer()">Utiliser le code<\/button><\/div>
-<div class="srch"><span>🔍<\/span><input id="q" placeholder="Rechercher un produit" oninput="srch(this.value)"><\/div>
-<div class="flt"><select class="sel" id="sortsel" onchange="setSort(this.value)"><option value="def">Trier : par défaut<\/option><option value="asc">Prix croissant<\/option><option value="desc">Prix décroissant<\/option><\/select><div class="chips" id="chips"><\/div><\/div>
-<div id="res"><\/div>
-<div id="bans"><\/div>
-<div id="hype"><\/div>
-<div id="cats"><\/div>
-<\/div>
+<div class="cd" id="cd" style="display:none"><div id="cd-t"></div><div class="cdn"><span><b id="cd-d">00</b>jours</span><span><b id="cd-h">00</b>heures</span><span><b id="cd-m">00</b>min</span><span><b id="cd-s">00</b>sec</span></div><button class="btn" onclick="useOffer()">Utiliser le code</button></div>
+<div class="srch"><span>🔍</span><input id="q" placeholder="Rechercher un produit" oninput="srch(this.value)"></div>
+<div class="flt"><select class="sel" id="sortsel" onchange="setSort(this.value)"><option value="def">Trier : par défaut</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select><div class="chips" id="chips"></div></div>
+<div id="res"></div>
+<div id="bans"></div>
+<div id="hype"></div>
+<div id="cats"></div>
+</div>
 
-<div id="v-pack" style="display:none"><\/div>
-<div id="v-info" style="display:none"><\/div>
+<div id="v-pack" style="display:none"></div>
+<div id="v-info" style="display:none"></div>
 <div id="v-cart" style="display:none">
-<h2 class="s">🛒 Mon panier<\/h2>
-<div class="box" id="cart"><\/div>
-<div id="sug"><\/div>
-<h2 class="s">📍 Livraison<\/h2>
-<div class="box" id="shipbox"><\/div>
-<div id="co"><\/div>
-<h2 class="s">💳 Paiement par Orange Money<\/h2>
+<h2 class="s">🛒 Mon panier</h2>
+<div class="box" id="cart"></div>
+<div id="sug"></div>
+<h2 class="s">📍 Livraison</h2>
+<div class="box" id="shipbox"></div>
+<div id="co"></div>
+<h2 class="s">💳 Paiement par Orange Money</h2>
 <div class="box">
 <ol>
-<li>Appuyez sur « Commander sur WhatsApp » dans votre panier.<\/li>
-<li>Envoyez le montant total par Orange Money au numéro : <span class="num">79 30 38 41<\/span><\/li>
-<li>Envoyez la capture de la confirmation sur WhatsApp avec votre adresse de livraison.<\/li>
-<li>Nous confirmons votre commande et vous livrons.<\/li>
-<\/ol>
-<a class="btn om" href="https://wa.me/22379303841?text=Bonjour%2C%20j%E2%80%99ai%20effectu%C3%A9%20le%20paiement%20Orange%20Money" target="_blank" rel="noopener">J’ai payé – envoyer la preuve<\/a>
-<\/div>
-<\/div>
+<li>Appuyez sur « Commander sur WhatsApp » dans votre panier.</li>
+<li>Envoyez le montant total par Orange Money au numéro : <span class="num">79 30 38 41</span></li>
+<li>Envoyez la capture de la confirmation sur WhatsApp avec votre adresse de livraison.</li>
+<li>Nous confirmons votre commande et vous livrons.</li>
+</ol>
+<a class="btn om" href="https://wa.me/22379303841?text=Bonjour%2C%20j%E2%80%99ai%20effectu%C3%A9%20le%20paiement%20Orange%20Money" target="_blank" rel="noopener">J’ai payé – envoyer la preuve</a>
+</div>
+</div>
 
-<div id="v-acct" style="display:none"><div id="acct"><\/div><\/div>
+<div id="v-acct" style="display:none"><div id="acct"></div></div>
 
-<footer><a href="#" onclick="tab('info');return false" style="color:inherit">Infos & aide<\/a> · © AST Gaming · WhatsApp : +223 79 30 38 41<\/footer>
-<\/div>
+<footer><a href="#" onclick="tab('info');return false" style="color:inherit">Infos & aide</a> · © AST Gaming · WhatsApp : +223 79 30 38 41</footer>
+</div>
 
 <nav class="nav">
-<button id="n-shop" class="on" onclick="tab('shop')"><span>🏠<\/span>Boutique<\/button>
-<button id="n-pack" onclick="tab('pack')"><span>🎁<\/span>Packs<\/button>
-<button id="n-cart" onclick="tab('cart')"><span>🛒<\/span>Mon panier<b class="cnt" id="cnt" style="display:none">0<\/b><\/button>
-<button id="n-acct" onclick="tab('acct')"><span>👤<\/span>Mon compte<\/button>
-<\/nav>
-<a class="btn wa fab" href="https://wa.me/22379303841" target="_blank" rel="noopener">💬 WhatsApp<\/a>
+<button id="n-shop" class="on" onclick="tab('shop')"><span>🏠</span>Boutique</button>
+<button id="n-pack" onclick="tab('pack')"><span>🎁</span>Packs</button>
+<button id="n-cart" onclick="tab('cart')"><span>🛒</span>Mon panier<b class="cnt" id="cnt" style="display:none">0</b></button>
+<button id="n-acct" onclick="tab('acct')"><span>👤</span>Mon compte</button>
+</nav>
+<a class="btn wa fab" href="https://wa.me/22379303841" target="_blank" rel="noopener">💬 WhatsApp</a>
 
-<div class="ov" id="ov" onclick="menu(0)"><button class="x" onclick="menu(0)" aria-label="Fermer">✕<\/button><div class="mn" onclick="event.stopPropagation()"><div id="mi"><\/div><div class="thm" style="margin-top:10px"><small>Thème du site<\/small><div class="chips" id="thm" style="flex-wrap:wrap;margin-top:6px"><\/div><\/div><hr><a class="cp" target="_blank" rel="noopener" href="https://wa.me/22379303841">Nous contacter sur WhatsApp<\/a><\/div><\/div>
+<div class="ov" id="ov" onclick="menu(0)"><button class="x" onclick="menu(0)" aria-label="Fermer">✕</button><div class="mn" onclick="event.stopPropagation()"><div id="mi"></div><div class="thm" style="margin-top:10px"><small>Thème du site</small><div class="chips" id="thm" style="flex-wrap:wrap;margin-top:6px"></div></div><hr><a class="cp" target="_blank" rel="noopener" href="https://wa.me/22379303841">Nous contacter sur WhatsApp</a></div></div>
 
-<div class="ov" id="pov" onclick="promoBox(0)"><button class="x" onclick="promoBox(0)" aria-label="Fermer">✕<\/button><div class="mn" id="pbox" onclick="event.stopPropagation()"><\/div><\/div>
-<div class="ov" id="dov" onclick="openP(0)"><button class="x" onclick="openP(0)" aria-label="Fermer">✕<\/button><div class="dsheet" id="dbox" onclick="event.stopPropagation()"><\/div><\/div>
-<div class="toast" id="toast"><\/div>
+<div class="ov" id="pov" onclick="promoBox(0)"><button class="x" onclick="promoBox(0)" aria-label="Fermer">✕</button><div class="mn" id="pbox" onclick="event.stopPropagation()"></div></div>
+<div class="ov" id="dov" onclick="openP(0)"><button class="x" onclick="openP(0)" aria-label="Fermer">✕</button><div class="dsheet" id="dbox" onclick="event.stopPropagation()"></div></div>
+<div class="toast" id="toast"></div>
 <div class="gate" id="gate"><div class="gc">
-<div class="logo lg"><svg class="mk" viewBox="0 0 60 60" width="64" height="64" aria-hidden="true"><polygon points="30,3 53.4,16.5 53.4,43.5 30,57 6.6,43.5 6.6,16.5" fill="#fff" stroke="#C9A227" stroke-width="3.5" stroke-linejoin="round"/><text x="30" y="35" text-anchor="middle" font-family="Arial Narrow,Impact,sans-serif" font-style="italic" font-weight="900" font-size="17" fill="#8f6b0c">AST<\/text><\/svg><span>Gaming<\/span><\/div>
-<p>Connectez-vous ou créez un compte pour accéder à la boutique<\/p>
-<div class="gt"><button id="gt-in" class="on" onclick="amode('in')">Connexion<\/button><button id="gt-up" onclick="amode('up')">Inscription<\/button><\/div>
+<div class="logo lg"><svg class="mk" viewBox="0 0 60 60" width="64" height="64" aria-hidden="true"><polygon points="30,3 53.4,16.5 53.4,43.5 30,57 6.6,43.5 6.6,16.5" fill="#fff" stroke="#C9A227" stroke-width="3.5" stroke-linejoin="round"/><text x="30" y="35" text-anchor="middle" font-family="Arial Narrow,Impact,sans-serif" font-style="italic" font-weight="900" font-size="17" fill="#8f6b0c">AST</text></svg><span>Gaming</span></div>
+<p>Connectez-vous ou créez un compte pour accéder à la boutique</p>
+<div class="gt"><button id="gt-in" class="on" onclick="amode('in')">Connexion</button><button id="gt-up" onclick="amode('up')">Inscription</button></div>
 <input class="in" id="gn" placeholder="Votre nom" autocomplete="name" style="display:none">
 <input class="in" id="ge" type="email" placeholder="Adresse e-mail (Gmail)" autocomplete="email">
 <input class="in" id="gp" type="password" placeholder="Mot de passe (6 caractères min.)" autocomplete="current-password">
-<div class="err" id="gerr"><\/div>
-<button class="btn" id="gb" onclick="auth()">Se connecter<\/button>
-<div class="sm">Votre panier et vos commandes sont enregistrés et retrouvés à chaque connexion avec votre e-mail.<\/div>
-<div class="chips" id="gthm" style="flex-wrap:wrap;justify-content:center;margin-top:12px"><\/div>
-<\/div><\/div>
+<div class="err" id="gerr"></div>
+<button class="btn" id="gb" onclick="auth()">Se connecter</button>
+<div class="sm">Votre panier et vos commandes sont enregistrés et retrouvés à chaque connexion avec votre e-mail.</div>
+<div class="chips" id="gthm" style="flex-wrap:wrap;justify-content:center;margin-top:12px"></div>
+</div></div>
 
 <script>
 var NUM="22379303841";
@@ -520,11 +479,11 @@ function tab(t){
 function card(x){
  var i=idx[x.id]||0,s=ssel(x),sl="",sw="",o="",m=x.cols.length>1;
  x.cols.forEach(function(c,k){
-  sl+='<div class="sl1">'+(c.im?'<img src="'+IM[c.im]+'" alt="'+x.n+'">':CI[x.c])+'<\/div>';
-  if(m)sw+='<button class="sw'+(k==i?' on':'')+'" data-p="'+x.id+'" data-i="'+k+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pick('+x.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"><\/button>';
+  sl+='<div class="sl1">'+(c.im?'<img src="'+IM[c.im]+'" alt="'+x.n+'">':CI[x.c])+'</div>';
+  if(m)sw+='<button class="sw'+(k==i?' on':'')+'" data-p="'+x.id+'" data-i="'+k+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pick('+x.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"></button>';
  });
- if(x.sz)x.sz.forEach(function(z,k){o+='<option value="'+k+'"'+(k==s?' selected':'')+'>'+szl(z)+'<\/option>'});
- return '<div class="pc"><div class="pi" onclick="openP('+x.id+')"><button class="hrt'+(fav[x.id]?' on':'')+'" data-p="'+x.id+'" aria-label="Favori" onclick="event.stopPropagation();togFav('+x.id+')">♥<\/button>'+(x.bd?'<span class="bd">'+x.bd+'<\/span>':'')+'<div class="sl" data-p="'+x.id+'" style="transform:translateX(-'+i*100+'%)">'+sl+'<\/div><\/div><div class="pb"><h4 onclick="openP('+x.id+')">'+x.n+'<\/h4><div class="sws">'+sw+'<\/div>'+(x.sz?'<select class="sel" data-p="'+x.id+'" onchange="setSz('+x.id+',this.value)">'+o+'<\/select>':'')+'<div class="bt"><div class="pr pp" data-p="'+x.id+'">'+pf(price(x,i,s))+'<\/div><button class="btn ab" data-p="'+x.id+'" onclick="addP('+x.id+')"'+(isOut(x,i)?' disabled':'')+'>'+(isOut(x,i)?'Épuisé':'Ajouter au panier')+'<\/button><\/div><\/div><\/div>';
+ if(x.sz)x.sz.forEach(function(z,k){o+='<option value="'+k+'"'+(k==s?' selected':'')+'>'+szl(z)+'</option>'});
+ return '<div class="pc"><div class="pi" onclick="openP('+x.id+')"><button class="hrt'+(fav[x.id]?' on':'')+'" data-p="'+x.id+'" aria-label="Favori" onclick="event.stopPropagation();togFav('+x.id+')">♥</button>'+(x.bd?'<span class="bd">'+x.bd+'</span>':'')+'<div class="sl" data-p="'+x.id+'" style="transform:translateX(-'+i*100+'%)">'+sl+'</div></div><div class="pb"><h4 onclick="openP('+x.id+')">'+x.n+'</h4><div class="sws">'+sw+'</div>'+(x.sz?'<select class="sel" data-p="'+x.id+'" onchange="setSz('+x.id+',this.value)">'+o+'</select>':'')+'<div class="bt"><div class="pr pp" data-p="'+x.id+'">'+pf(price(x,i,s))+'</div><button class="btn ab" data-p="'+x.id+'" onclick="addP('+x.id+')"'+(isOut(x,i)?' disabled':'')+'>'+(isOut(x,i)?'Épuisé':'Ajouter au panier')+'</button></div></div></div>';
 }
 function upd(id){
  var x=pr(id),i=idx[id]||0,s=ssel(x);
@@ -544,18 +503,18 @@ function openP(id){
  if(!id){ov.classList.remove("on");return}
  var x=pr(id),i=idx[id]||0,s=ssel(x),sl="",sw="",o="",m=x.cols.length>1,sp="",out=isOut(x,i);
  x.cols.forEach(function(c,k){
-  sl+='<div class="sl1">'+(c.im?'<img src="'+IM[c.im]+'" alt="'+x.n+'">':CI[x.c])+'<\/div>';
-  if(m)sw+='<button class="sw'+(k==i?' on':'')+'" data-p="'+x.id+'" data-i="'+k+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pick('+x.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"><\/button>';
+  sl+='<div class="sl1">'+(c.im?'<img src="'+IM[c.im]+'" alt="'+x.n+'">':CI[x.c])+'</div>';
+  if(m)sw+='<button class="sw'+(k==i?' on':'')+'" data-p="'+x.id+'" data-i="'+k+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pick('+x.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"></button>';
  });
- if(x.sz)x.sz.forEach(function(z,k){o+='<option value="'+k+'"'+(k==s?' selected':'')+'>'+szl(z)+'<\/option>'});
- (SPECS[id]||[]).forEach(function(t){sp+='<li>'+t+'<\/li>'});
- $("dbox").innerHTML='<div class="pi"><button class="hrt'+(fav[x.id]?' on':'')+'" data-p="'+x.id+'" aria-label="Favori" onclick="togFav('+x.id+')">♥<\/button><div class="sl" data-p="'+x.id+'" style="transform:translateX(-'+i*100+'%)">'+sl+'<\/div><\/div><div class="pb"><h4>'+x.n+'<\/h4><div class="sws">'+sw+'<\/div>'+(x.sz?'<select class="sel" data-p="'+x.id+'" onchange="setSz('+x.id+',this.value)">'+o+'<\/select>':'')+'<ul class="spec">'+sp+'<\/ul><div class="sm2">🚚 Livraison estimée : '+DELAI+'<\/div><div class="bt"><div class="pr pp" data-p="'+x.id+'">'+pf(price(x,i,s))+'<\/div><button class="btn ab" data-p="'+x.id+'" onclick="addP('+x.id+')"'+(out?' disabled':'')+'>'+(out?'Épuisé':'Ajouter au panier')+'<\/button><a class="btn wa" target="_blank" rel="noopener" href="'+share(x)+'">Partager sur WhatsApp<\/a><\/div><\/div>';
+ if(x.sz)x.sz.forEach(function(z,k){o+='<option value="'+k+'"'+(k==s?' selected':'')+'>'+szl(z)+'</option>'});
+ (SPECS[id]||[]).forEach(function(t){sp+='<li>'+t+'</li>'});
+ $("dbox").innerHTML='<div class="pi"><button class="hrt'+(fav[x.id]?' on':'')+'" data-p="'+x.id+'" aria-label="Favori" onclick="togFav('+x.id+')">♥</button><div class="sl" data-p="'+x.id+'" style="transform:translateX(-'+i*100+'%)">'+sl+'</div></div><div class="pb"><h4>'+x.n+'</h4><div class="sws">'+sw+'</div>'+(x.sz?'<select class="sel" data-p="'+x.id+'" onchange="setSz('+x.id+',this.value)">'+o+'</select>':'')+'<ul class="spec">'+sp+'</ul><div class="sm2">🚚 Livraison estimée : '+DELAI+'</div><div class="bt"><div class="pr pp" data-p="'+x.id+'">'+pf(price(x,i,s))+'</div><button class="btn ab" data-p="'+x.id+'" onclick="addP('+x.id+')"'+(out?' disabled':'')+'>'+(out?'Épuisé':'Ajouter au panier')+'</button><a class="btn wa" target="_blank" rel="noopener" href="'+share(x)+'">Partager sur WhatsApp</a></div></div>';
  ov.classList.add("on");
 }
 function pick(id,i){idx[id]=i;lk[id]=Date.now()+8000;upd(id);save()}
 function setSz(id,v){sel[id]=+v;upd(id);save()}
-function head(t,id){return '<div class="ttl">[ '+t+' ]<\/div><br><button class="more" onclick="more(this,\''+id+'\')">Voir tout <i>›<\/i><\/button>'}
-function more(b,id){var w=$(id).classList.toggle("wrap");b.innerHTML=w?"Réduire <i>‹<\/i>":"Voir tout <i>›<\/i>"}
+function head(t,id){return '<div class="ttl">[ '+t+' ]</div><br><button class="more" onclick="more(this,\''+id+'\')">Voir tout <i>›</i></button>'}
+function more(b,id){var w=$(id).classList.toggle("wrap");b.innerHTML=w?"Réduire <i>‹</i>":"Voir tout <i>›</i>"}
 function go(c){tab("shop");setTimeout(function(){var e=$("s-"+c);if(e)e.scrollIntoView({behavior:"smooth"})},50)}
 var CFL=[["noir","Noir"],["blanc","Blanc"],["gris","Gris"],["rouge","Rouge"],["rose","Rose"],["orange","Orange"],["vert","Vert"],["bleu","Bleu"],["violet","Violet"]];
 function nrm(t){return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
@@ -563,17 +522,17 @@ function cfIdx(x){if(!cf)return -1;for(var k=0;k<x.cols.length;k++)if(nrm(x.cols
 function setSort(v){sortM=v;build()}
 function setCf(v){cf=v;chipsR();build()}
 function chipsR(){
- var h='<button class="chip'+(cf?'':' on')+'" onclick="setCf(\'\')">Toutes les couleurs<\/button>';
- CFL.forEach(function(c){h+='<button class="chip'+(cf==c[0]?' on':'')+'" onclick="setCf(\''+(cf==c[0]?'':c[0])+'\')">'+c[1]+'<\/button>'});
+ var h='<button class="chip'+(cf?'':' on')+'" onclick="setCf(\'\')">Toutes les couleurs</button>';
+ CFL.forEach(function(c){h+='<button class="chip'+(cf==c[0]?' on':'')+'" onclick="setCf(\''+(cf==c[0]?'':c[0])+'\')">'+c[1]+'</button>'});
  $("chips").innerHTML=h;
 }
 function build(){
  var h="";
- BAN.forEach(function(x){h+='<div class="ban" style="background:'+x.bg+'"><span class="big">'+x.i+'<\/span><div><h3>'+x.t+'<\/h3><p>'+x.s+'<\/p><\/div><button class="glass" onclick="go(\''+x.c+'\')">'+x.b+'<\/button><\/div>'});
+ BAN.forEach(function(x){h+='<div class="ban" style="background:'+x.bg+'"><span class="big">'+x.i+'</span><div><h3>'+x.t+'</h3><p>'+x.s+'</p></div><button class="glass" onclick="go(\''+x.c+'\')">'+x.b+'</button></div>'});
  $("bans").innerHTML=h;
  h=head("LES PRODUITS HYPE","car-hype")+'<div class="car" id="car-hype">';
  [2,3,9].forEach(function(id){h+=card(pr(id))});
- $("hype").innerHTML=h+'<\/div>';
+ $("hype").innerHTML=h+'</div>';
  h="";
  CATS.forEach(function(c){
   var L=P.filter(function(x){return x.c==c[0]&&(!cf||cfIdx(x)>-1)});
@@ -581,7 +540,7 @@ function build(){
   if(sortM!="def")L.sort(function(a,b){var pa=price(a,0,ssel(a)),pb=price(b,0,ssel(b));return sortM=="asc"?pa-pb:pb-pa});
   h+='<div id="s-'+c[0]+'">'+head(c[1].toUpperCase(),"car-"+c[0])+'<div class="car" id="car-'+c[0]+'">';
   L.forEach(function(x){if(cf){var k=cfIdx(x);if(k>-1){idx[x.id]=k;lk[x.id]=Date.now()+60000}}h+=card(x)});
-  h+='<\/div><\/div>';
+  h+='</div></div>';
  });
  $("cats").innerHTML=h;
 }
@@ -594,17 +553,17 @@ function pkk(pk){return sel["pk"+pk.id]||0}
 function pkPrice(pk){if(pk.pr!=null)return pk.pr;var t=0;pk.items.forEach(function(it){var x=pr(it.p);t+=price(x,it.i||0,ssel(x))});return t}
 function unit(o){return o.pk?pkPrice(pkById(o.pk)):price(pr(o.id),o.i,o.s)}
 function packsR(){
- var h='<div class="ttl">[ PACK INFLUENCEUR ]<\/div>';
+ var h='<div class="ttl">[ PACK INFLUENCEUR ]</div>';
  PK.forEach(function(pk){
   var kb=pkk(pk),imgs="",lines="",sw="",kx=null;
   pk.items.forEach(function(it){
    var x=pr(it.p),c=x.cols[it.kb?kb:(it.i||0)];
    imgs+='<img src="'+IM[c.im]+'" alt="'+x.n+'">';
-   if(it.kb){kx=x;lines+='<div class="pkl"><span>'+CI[x.c]+' '+x.n+'<\/span><b>'+c.n+'<\/b><\/div>'}
-   else lines+='<div class="pkl"><span>'+CI[x.c]+' '+x.n+'<\/span><b>'+c.n+'<\/b><\/div>';
+   if(it.kb){kx=x;lines+='<div class="pkl"><span>'+CI[x.c]+' '+x.n+'</span><b>'+c.n+'</b></div>'}
+   else lines+='<div class="pkl"><span>'+CI[x.c]+' '+x.n+'</span><b>'+c.n+'</b></div>';
   });
-  kx.cols.forEach(function(c,k){sw+='<button class="sw'+(k==kb?' on':'')+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pkPick('+pk.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"><\/button>'});
-  h+='<div class="pkc"><div class="pkg">'+imgs+'<\/div><div class="pb"><h4>'+pk.n+'<\/h4>'+lines+'<div class="sws" style="margin-top:4px">'+sw+'<\/div><div class="bt"><div class="pr">'+pf(pkPrice(pk))+'<\/div><button class="btn" onclick="addPk('+pk.id+')">Ajouter le pack au panier<\/button><\/div><\/div><\/div>';
+  kx.cols.forEach(function(c,k){sw+='<button class="sw'+(k==kb?' on':'')+'" title="'+c.n+'" aria-label="'+c.n+'" onclick="pkPick('+pk.id+','+k+')"><img src="'+IMT[c.im]+'" alt="" decoding="async"></button>'});
+  h+='<div class="pkc"><div class="pkg">'+imgs+'</div><div class="pb"><h4>'+pk.n+'</h4>'+lines+'<div class="sws" style="margin-top:4px">'+sw+'</div><div class="bt"><div class="pr">'+pf(pkPrice(pk))+'</div><button class="btn" onclick="addPk('+pk.id+')">Ajouter le pack au panier</button></div></div></div>';
  });
  $("v-pack").innerHTML=h;
 }
@@ -613,18 +572,18 @@ function addPk(id){var pk=pkById(id),k="pk|"+id+"|"+pkk(pk);cart[k]=cart[k]||{pk
 function lbl(o){
  if(o.pk){var pk=pkById(o.pk);return pk.n+" ("+pk.items.map(function(it){var x=pr(it.p),c=x.cols[it.kb?o.i:(it.i||0)];return x.n+" "+c.n}).join(" + ")+")"}
  var x=pr(o.id),l=x.n;if(x.cols[0].im)l+=" – "+x.cols[o.i].n;if(x.sz)l+=" – "+szl(x.sz[o.s]);return l}
-function thmHtml(){var t=document.documentElement.getAttribute("data-theme");return '<button class="chip'+(t=="wb"?' on':'')+'" onclick="setTheme(\'wb\')">⚪ Blanc & noir<\/button><button class="chip'+(t=="bw"?' on':'')+'" onclick="setTheme(\'bw\')">⚫ Noir & blanc<\/button><button class="chip'+(t=="gold"?' on':'')+'" onclick="setTheme(\'gold\')">🟡 Blanc & or<\/button>'}
-function themeH(){return '<h2 class="s">🎨 Apparence<\/h2><div class="box"><div class="chips" style="flex-wrap:wrap">'+thmHtml()+'<\/div><\/div>'}
+function thmHtml(){var t=document.documentElement.getAttribute("data-theme");return '<button class="chip'+(t=="wb"?' on':'')+'" onclick="setTheme(\'wb\')">⚪ Blanc & noir</button><button class="chip'+(t=="bw"?' on':'')+'" onclick="setTheme(\'bw\')">⚫ Noir & blanc</button><button class="chip'+(t=="gold"?' on':'')+'" onclick="setTheme(\'gold\')">🟡 Blanc & or</button>'}
+function themeH(){return '<h2 class="s">🎨 Apparence</h2><div class="box"><div class="chips" style="flex-wrap:wrap">'+thmHtml()+'</div></div>'}
 function thmR(){var h=thmHtml(),a=$("thm"),b=$("gthm"),t=document.documentElement.getAttribute("data-theme"),m=document.querySelector('meta[name="theme-color"]');if(a)a.innerHTML=h;if(b)b.innerHTML=h;if(m)m.setAttribute("content",({wb:"#ffffff",bw:"#0b0b0b",gold:"#c9a227"})[t])}
 function setTheme(t){document.documentElement.setAttribute("data-theme",t);sv("mg_theme",t);thmR();if(cur)acctR()}
 function togFav(id){if(fav[id])delete fav[id];else fav[id]=1;upd(id);save();acctR()}
 function favH(){
  var ids=Object.keys(fav).filter(function(k){return fav[k]&&pr(+k)});
- var h='<h2 class="s">❤️ Mes favoris<\/h2>';
- if(!ids.length)return h+'<div class="box"><small>Touchez le cœur sur un produit pour le garder ici.<\/small><\/div>';
+ var h='<h2 class="s">❤️ Mes favoris</h2>';
+ if(!ids.length)return h+'<div class="box"><small>Touchez le cœur sur un produit pour le garder ici.</small></div>';
  h+='<div class="box">';
- ids.forEach(function(k){var x=pr(+k),i=idx[x.id]||0;h+='<div class="sg"><img src="'+IMT[x.cols[i].im]+'" alt=""><div><b>'+x.n+'<\/b><br><span class="pr">'+pf(price(x,i,ssel(x)))+'<\/span><\/div><button class="btn" onclick="openP('+x.id+')">Voir<\/button><\/div>'});
- return h+'<\/div>';
+ ids.forEach(function(k){var x=pr(+k),i=idx[x.id]||0;h+='<div class="sg"><img src="'+IMT[x.cols[i].im]+'" alt=""><div><b>'+x.n+'</b><br><span class="pr">'+pf(price(x,i,ssel(x)))+'</span></div><button class="btn" onclick="openP('+x.id+')">Voir</button></div>'});
+ return h+'</div>';
 }
 function sugR(){
  var el=$("sug");if(!el)return;
@@ -635,9 +594,9 @@ function sugR(){
  ["souris","clavier","tapis","casque"].forEach(function(c){
   if(have[c]||n>=3)return;n++;
   var x=pr(picks[c]),i=idx[x.id]||0;
-  h+='<div class="sg"><img src="'+IM[x.cols[i].im]+'" alt=""><div><b>'+x.n+'<\/b><br><span class="pr">'+pf(price(x,i,ssel(x)))+'<\/span><\/div><button class="btn" onclick="addP('+x.id+')">+ Ajouter<\/button><\/div>';
+  h+='<div class="sg"><img src="'+IM[x.cols[i].im]+'" alt=""><div><b>'+x.n+'</b><br><span class="pr">'+pf(price(x,i,ssel(x)))+'</span></div><button class="btn" onclick="addP('+x.id+')">+ Ajouter</button></div>';
  });
- el.innerHTML=h?'<h3 class="sgt">✨ Complète ton setup<\/h3><div class="box">'+h+'<\/div>':"";
+ el.innerHTML=h?'<h3 class="sgt">✨ Complète ton setup</h3><div class="box">'+h+'</div>':"";
 }
 function cdTick(){
  var el=$("cd");if(!el)return;if(!PROMOS[OFFRE.code]){el.style.display="none";return}
@@ -645,13 +604,13 @@ function cdTick(){
  if(t<=0){if(el.style.display!="none"){el.style.display="none";render();refreshPrices()}return}
  el.style.display="flex";
  function z(n){return (n<10?"0":"")+n}
- $("cd-t").innerHTML='⏳ <b>'+OFFRE.txt+'<\/b> · −'+PROMOS[OFFRE.code].pct+' % avec le code <b>'+OFFRE.code+'<\/b>';
+ $("cd-t").innerHTML='⏳ <b>'+OFFRE.txt+'</b> · −'+PROMOS[OFFRE.code].pct+' % avec le code <b>'+OFFRE.code+'</b>';
  $("cd-d").textContent=z(Math.floor(t/864e5));$("cd-h").textContent=z(Math.floor(t%864e5/36e5));$("cd-m").textContent=z(Math.floor(t%36e5/6e4));$("cd-s").textContent=z(Math.floor(t%6e4/1e3));
 }
 function useOffer(){promoBox(1);if(pinfo(1))return;$("pcode2").value=OFFRE.code;applyPromo("pcode2","perr2",1)}
 function thumbOf(o){
- if(o.pk){var pk=pkById(o.pk),h='<div class="ci cp">';pk.items.forEach(function(it){var x=pr(it.p);h+='<img src="'+IMT[x.cols[it.kb?o.i:(it.i||0)].im]+'" alt="">'});return h+'<\/div>'}
- var x=pr(o.id);return x.cols[o.i].im?'<img class="ci" src="'+IM[x.cols[o.i].im]+'" alt="">':'<div class="ci">'+CI[x.c]+'<\/div>';
+ if(o.pk){var pk=pkById(o.pk),h='<div class="ci cp">';pk.items.forEach(function(it){var x=pr(it.p);h+='<img src="'+IMT[x.cols[it.kb?o.i:(it.i||0)].im]+'" alt="">'});return h+'</div>'}
+ var x=pr(o.id);return x.cols[o.i].im?'<img class="ci" src="'+IM[x.cols[o.i].im]+'" alt="">':'<div class="ci">'+CI[x.c]+'</div>';
 }
 var tt=null;
 function toast(t){var e=$("toast");e.textContent=t;e.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){e.classList.remove("on")},1500)}
@@ -673,7 +632,7 @@ function flyAdd(id,src,fromEl){
  }catch(e){}
  toast("✓ Ajouté au panier");
 }
-function pf(p){var d=pinfo(1);if(!d)return f(p);return '<s class="old">'+f(p)+'<\/s> <span class="new">'+f(p-Math.round(p*d.pct/100))+'<\/span>'}
+function pf(p){var d=pinfo(1);if(!d)return f(p);return '<s class="old">'+f(p)+'</s> <span class="new">'+f(p-Math.round(p*d.pct/100))+'</span>'}
 function refreshPrices(){P.forEach(function(x){upd(x.id)});if(cur)packsR();var q=$("q");if(q&&q.value)srch(q.value)}
 function pinfo(t){var p=PROMOS[promo];if(!p||(p.first&&orders.length>0)||(p.fin&&Date.now()>Date.parse(p.fin)))return null;return {code:promo,pct:p.pct,amt:Math.round(t*p.pct/100)}}
 function pstate(){var b=$("pbtn");if(b)b.classList.toggle("on",!!pinfo(1))}
@@ -690,7 +649,7 @@ function rmPromo(){promo="";save();render();refreshPrices();if($("pov").classLis
 function promoBox(o){
  if(o){
   var d=pinfo(1);
-  $("pbox").innerHTML='<h3>🏷️ Code promo<\/h3>'+(d?'<p>Code <b>'+d.code+'<\/b> appliqué (−'+d.pct+' %). La réduction sera déduite de votre commande.<\/p><button class="btn" onclick="rmPromo()">Retirer le code<\/button>':'<div class="promo"><input class="in" id="pcode2" placeholder="Entrez votre code" autocapitalize="characters"><button class="btn" onclick="applyPromo(\'pcode2\',\'perr2\',1)">Appliquer<\/button><\/div><div class="err" id="perr2"><\/div>');
+  $("pbox").innerHTML='<h3>🏷️ Code promo</h3>'+(d?'<p>Code <b>'+d.code+'</b> appliqué (−'+d.pct+' %). La réduction sera déduite de votre commande.</p><button class="btn" onclick="rmPromo()">Retirer le code</button>':'<div class="promo"><input class="in" id="pcode2" placeholder="Entrez votre code" autocapitalize="characters"><button class="btn" onclick="applyPromo(\'pcode2\',\'perr2\',1)">Appliquer</button></div><div class="err" id="perr2"></div>');
  }
  $("pov").classList.toggle("on",!!o);
 }
@@ -698,37 +657,37 @@ function zone(v){for(var i=0;i<VILLES.length;i++)if(VILLES[i][0]==v)return VILLE
 function shipFee(){return FRAIS[zone(ship.ville)]}
 function shipSet(k,v){ship[k]=v;save();render()}
 function shipR(){
- var o="";VILLES.forEach(function(v){o+='<option'+(v[0]==ship.ville?' selected':'')+'>'+v[0]+'<\/option>'});
- $("shipbox").innerHTML='<select class="sel" onchange="shipSet(\'ville\',this.value)">'+o+'<\/select><input class="in" placeholder="Quartier, rue, repère (adresse de livraison)" value="'+esc(ship.adr)+'" oninput="shipSet(\'adr\',this.value)"><input class="in" type="tel" placeholder="Téléphone (WhatsApp / Orange Money)" value="'+esc(ship.tel)+'" oninput="shipSet(\'tel\',this.value)"><input class="in" placeholder="Remarque (facultatif)" value="'+esc(ship.note)+'" oninput="shipSet(\'note\',this.value)"><div class="sm2">🚚 Délai estimé : '+DELAI+' après confirmation du paiement.<\/div>';
+ var o="";VILLES.forEach(function(v){o+='<option'+(v[0]==ship.ville?' selected':'')+'>'+v[0]+'</option>'});
+ $("shipbox").innerHTML='<select class="sel" onchange="shipSet(\'ville\',this.value)">'+o+'</select><input class="in" placeholder="Quartier, rue, repère (adresse de livraison)" value="'+esc(ship.adr)+'" oninput="shipSet(\'adr\',this.value)"><input class="in" type="tel" placeholder="Téléphone (WhatsApp / Orange Money)" value="'+esc(ship.tel)+'" oninput="shipSet(\'tel\',this.value)"><input class="in" placeholder="Remarque (facultatif)" value="'+esc(ship.note)+'" oninput="shipSet(\'note\',this.value)"><div class="sm2">🚚 Délai estimé : '+DELAI+' après confirmation du paiement.</div>';
 }
 function render(){
  var ks=Object.keys(cart),h="",t=0,n=0,u=me(),nm=u?u.name:"";
  lastItems=[];lastPromo="";pend="MG-"+Date.now().toString(36).toUpperCase().slice(-6);
  var msg="Bonjour, c’est "+nm+" ("+(cur||"")+"). Je souhaite commander ("+pend+") :\n";
- if(!ks.length){$("cart").innerHTML='<small>Votre panier est vide.<\/small>';$("co").innerHTML=""}
+ if(!ks.length){$("cart").innerHTML='<small>Votre panier est vide.</small>';$("co").innerHTML=""}
  else{
   ks.forEach(function(k){
    var o=cart[k],sub=unit(o)*o.q,line=o.q+" x "+lbl(o)+" = "+f(sub);
    t+=sub;n+=o.q;msg+="- "+line+"\n";lastItems.push(line);
-   h+='<div class="row ir">'+thumbOf(o)+'<div class="im"><span>'+lbl(o)+'<\/span><span class="q"><button onclick="chg(\''+k+'\',-1)">−<\/button> '+o.q+' <button onclick="chg(\''+k+'\',1)">+<\/button><\/span><\/div><b>'+f(sub)+'<\/b><\/div>';
+   h+='<div class="row ir">'+thumbOf(o)+'<div class="im"><span>'+lbl(o)+'</span><span class="q"><button onclick="chg(\''+k+'\',-1)">−</button> '+o.q+' <button onclick="chg(\''+k+'\',1)">+</button></span></div><b>'+f(sub)+'</b></div>';
   });
   var d=pinfo(t),base=t-(d?d.amt:0),fee=base>=FREE?0:shipFee(),fin=base+fee;
   if(promo&&!d)promo="";
   if(d){
    lastPromo=d.code+" (−"+d.pct+" %) : −"+f(d.amt)+(PROMOS[d.code]&&PROMOS[d.code].inf?" – code influenceur":"");msg+="Code promo "+lastPromo+"\n";
-   h+='<div class="row"><span>Sous-total<\/span><span>'+f(t)+'<\/span><\/div>';
-   h+='<div class="row"><span>🏷️ Code '+d.code+' (−'+d.pct+' %)<\/span><span><b>−'+f(d.amt)+'<\/b> <button class="lnk" onclick="rmPromo()">Retirer<\/button><\/span><\/div>';
+   h+='<div class="row"><span>Sous-total</span><span>'+f(t)+'</span></div>';
+   h+='<div class="row"><span>🏷️ Code '+d.code+' (−'+d.pct+' %)</span><span><b>−'+f(d.amt)+'</b> <button class="lnk" onclick="rmPromo()">Retirer</button></span></div>';
   }else{
-   h+='<div class="promo"><input class="in" id="pcode" placeholder="Code promo" autocapitalize="characters"><button class="btn" onclick="applyPromo()">Appliquer<\/button><\/div><div class="err" id="perr"><\/div>';
+   h+='<div class="promo"><input class="in" id="pcode" placeholder="Code promo" autocapitalize="characters"><button class="btn" onclick="applyPromo()">Appliquer</button></div><div class="err" id="perr"></div>';
   }
-  h+='<div class="row"><span>🚚 Livraison ('+esc(ship.ville)+')<\/span><span>'+(fee?f(fee):'<b class="free">Offerte 🎉<\/b>')+'<\/span><\/div>';if(fee)h+='<div class="fr"><div class="frb"><i style="width:'+Math.min(100,Math.round(base*100/FREE))+'%"><\/i><\/div><small>Plus que '+f(FREE-base)+' pour la livraison offerte 🎁<\/small><\/div>';
-  h+='<div class="row"><b>Total<\/b><b class="pr">'+f(fin)+'<\/b><\/div>';
+  h+='<div class="row"><span>🚚 Livraison ('+esc(ship.ville)+')</span><span>'+(fee?f(fee):'<b class="free">Offerte 🎉</b>')+'</span></div>';if(fee)h+='<div class="fr"><div class="frb"><i style="width:'+Math.min(100,Math.round(base*100/FREE))+'%"></i></div><small>Plus que '+f(FREE-base)+' pour la livraison offerte 🎁</small></div>';
+  h+='<div class="row"><b>Total</b><b class="pr">'+f(fin)+'</b></div>';
   lastTotal=fin;lastFee=fee;
   var ok=ship.adr.trim().length>3&&ship.tel.replace(/\D/g,"").length>=8;
   lastShip=ship.ville+", "+ship.adr.trim()+" – Tél : "+ship.tel.trim()+(ship.note.trim()?" – Remarque : "+ship.note.trim():"");
   msg+="Livraison : "+(fee?f(fee):"offerte")+" ("+lastShip+")\nTotal : "+f(fin)+"\nPaiement : Orange Money";
   $("cart").innerHTML=h;
-  $("co").innerHTML=ok?'<a class="btn wa" style="display:block" target="_blank" rel="noopener" href="'+wa(msg)+'" onclick="placeOrder()">Commander sur WhatsApp<\/a><div class="sm2">Délai estimé : '+DELAI+'<\/div>':'<button class="btn" style="display:block;width:100%;opacity:.5" disabled>Commander sur WhatsApp<\/button><div class="err">Renseignez l’adresse de livraison et votre téléphone pour commander.<\/div>';
+  $("co").innerHTML=ok?'<a class="btn wa" style="display:block" target="_blank" rel="noopener" href="'+wa(msg)+'" onclick="placeOrder()">Commander sur WhatsApp</a><div class="sm2">Délai estimé : '+DELAI+'</div>':'<button class="btn" style="display:block;width:100%;opacity:.5" disabled>Commander sur WhatsApp</button><div class="err">Renseignez l’adresse de livraison et votre téléphone pour commander.</div>';
  }
  var c=$("cnt");c.textContent=n;c.style.display=n?"inline-block":"none";pstate();sugR();
 }
@@ -741,25 +700,25 @@ function placeOrder(){
 }
 function acctR(){
  var u=me();if(!u)return;
- var h='<h2 class="s">👤 Mon compte<\/h2><div class="box"><b>'+esc(u.name)+'<\/b><br><small>'+esc(cur)+'<\/small><br><br><button class="btn" onclick="logout()">Changer de compte<\/button><br><small>Vous restez connecté sur cet appareil jusqu’à ce que vous changiez de compte.<\/small><\/div>'+favH()+themeH()+'<h2 class="s">📦 Mes commandes<\/h2>';
- if(!orders.length)h+='<div class="box"><small>Aucune commande pour le moment.<\/small><\/div>';
+ var h='<h2 class="s">👤 Mon compte</h2><div class="box"><b>'+esc(u.name)+'</b><br><small>'+esc(cur)+'</small><br><br><button class="btn" onclick="logout()">Changer de compte</button><br><small>Vous restez connecté sur cet appareil jusqu’à ce que vous changiez de compte.</small></div>'+favH()+themeH()+'<h2 class="s">📦 Mes commandes</h2>';
+ if(!orders.length)h+='<div class="box"><small>Aucune commande pour le moment.</small></div>';
  orders.forEach(function(o,i){
-  h+='<div class="box"><div class="row"><b>'+o.id+'<\/b><small>'+o.d+'<\/small><\/div>';
-  o.items.forEach(function(l){h+='<div class="oi">'+esc(l)+'<\/div>'});
-  if(o.pr)h+='<div class="oi">🏷️ Code promo '+esc(o.pr)+'<\/div>';if(o.ad)h+='<div class="oi">📍 '+esc(o.ad)+'<\/div><div class="oi">🚚 Livraison : '+(o.fee?f(o.fee):"offerte")+'<\/div>';h+='<div class="row"><b>Total<\/b><b>'+f(o.total)+'<\/b><\/div><div class="row"><span class="st">'+o.st+'<\/span>';
-  if(o.st!="Remboursement demandé")h+='<a class="btn rf" target="_blank" rel="noopener" href="'+wa("Bonjour, je souhaite demander le remboursement de ma commande "+o.id+" ("+o.items.join(", ")+"). Total : "+f(o.total)+". Client : "+u.name+" ("+cur+")")+'" onclick="refund('+i+')">Demander un remboursement<\/a>';
-  h+='<\/div><\/div>';
+  h+='<div class="box"><div class="row"><b>'+o.id+'</b><small>'+o.d+'</small></div>';
+  o.items.forEach(function(l){h+='<div class="oi">'+esc(l)+'</div>'});
+  if(o.pr)h+='<div class="oi">🏷️ Code promo '+esc(o.pr)+'</div>';if(o.ad)h+='<div class="oi">📍 '+esc(o.ad)+'</div><div class="oi">🚚 Livraison : '+(o.fee?f(o.fee):"offerte")+'</div>';h+='<div class="row"><b>Total</b><b>'+f(o.total)+'</b></div><div class="row"><span class="st">'+o.st+'</span>';
+  if(o.st!="Remboursement demandé")h+='<a class="btn rf" target="_blank" rel="noopener" href="'+wa("Bonjour, je souhaite demander le remboursement de ma commande "+o.id+" ("+o.items.join(", ")+"). Total : "+f(o.total)+". Client : "+u.name+" ("+cur+")")+'" onclick="refund('+i+')">Demander un remboursement</a>';
+  h+='</div></div>';
  });
  $("acct").innerHTML=h;
 }
 function infoR(){
  var fr=FRAIS[1]==FRAIS[2]?f(FRAIS[1])+" partout au Mali":"Bamako et Kati : "+f(FRAIS[1])+" · Autres villes : "+f(FRAIS[2]);
- var sec=[["🛒 Comment commander",'<ol><li>Créez un compte ou connectez-vous.<\/li><li>Choisissez vos produits (couleur, taille) et ajoutez-les au panier.<\/li><li>Ouvrez <b>Mon panier<\/b>, renseignez votre adresse et votre téléphone.<\/li><li>Appuyez sur « Commander sur WhatsApp » : votre commande nous est envoyée.<\/li><li>Payez par Orange Money au <b>79 30 38 41<\/b> et envoyez la capture.<\/li><li>Nous confirmons et préparons l’expédition.<\/li><\/ol>'],
- ["🚚 Livraison et délais","<p>Nos produits sont expédiés depuis l’étranger. Délai estimé : <b>"+DELAI+"<\/b> après confirmation du paiement.<\/p><p>Frais de livraison : "+fr+". <b>Livraison offerte dès "+f(FREE)+" d’achat.<\/b><\/p><p>Nous vous prévenons sur WhatsApp à chaque étape.<\/p>"],
- ["↩️ Remboursement",'<p>Pour demander un remboursement : <b>Mon compte → Mes commandes → Demander un remboursement<\/b>, ou écrivez-nous sur WhatsApp avec votre numéro de commande.<\/p><ul><li>Commande non expédiée : remboursement intégral.<\/li><li>Produit défectueux ou non conforme : signalez-le dans les 7 jours après réception, avec des photos.<\/li><li>Le remboursement se fait par Orange Money après vérification.<\/li><\/ul>'],
- ["💬 Nous contacter",'<p>WhatsApp : <a href="https://wa.me/22379303841" target="_blank" rel="noopener">+223 79 30 38 41<\/a><\/p>']];
- var h='<div class="ttl">[ INFOS & AIDE ]<\/div>';
- sec.forEach(function(x,i){h+='<details class="dt"'+(i==0?' open':'')+'><summary>'+x[0]+'<\/summary>'+x[1]+'<\/details>'});
+ var sec=[["🛒 Comment commander",'<ol><li>Créez un compte ou connectez-vous.</li><li>Choisissez vos produits (couleur, taille) et ajoutez-les au panier.</li><li>Ouvrez <b>Mon panier</b>, renseignez votre adresse et votre téléphone.</li><li>Appuyez sur « Commander sur WhatsApp » : votre commande nous est envoyée.</li><li>Payez par Orange Money au <b>79 30 38 41</b> et envoyez la capture.</li><li>Nous confirmons et préparons l’expédition.</li></ol>'],
+ ["🚚 Livraison et délais","<p>Nos produits sont expédiés depuis l’étranger. Délai estimé : <b>"+DELAI+"</b> après confirmation du paiement.</p><p>Frais de livraison : "+fr+". <b>Livraison offerte dès "+f(FREE)+" d’achat.</b></p><p>Nous vous prévenons sur WhatsApp à chaque étape.</p>"],
+ ["↩️ Remboursement",'<p>Pour demander un remboursement : <b>Mon compte → Mes commandes → Demander un remboursement</b>, ou écrivez-nous sur WhatsApp avec votre numéro de commande.</p><ul><li>Commande non expédiée : remboursement intégral.</li><li>Produit défectueux ou non conforme : signalez-le dans les 7 jours après réception, avec des photos.</li><li>Le remboursement se fait par Orange Money après vérification.</li></ul>'],
+ ["💬 Nous contacter",'<p>WhatsApp : <a href="https://wa.me/22379303841" target="_blank" rel="noopener">+223 79 30 38 41</a></p>']];
+ var h='<div class="ttl">[ INFOS & AIDE ]</div>';
+ sec.forEach(function(x,i){h+='<details class="dt"'+(i==0?' open':'')+'><summary>'+x[0]+'</summary>'+x[1]+'</details>'});
  $("v-info").innerHTML=h;
 }
 function refund(i){orders[i].st="Remboursement demandé";if(cloud)sb.rpc("request_refund",{oref:orders[i].id}).then(function(){});save();setTimeout(acctR,600)}
@@ -772,11 +731,11 @@ function srch(v){
  if(!v){r.innerHTML="";return}
  var m=P.filter(function(x){return (x.n+" "+x.d).toLowerCase().indexOf(v)>-1}),h="";
  m.forEach(function(x){h+=card(x)});
- r.innerHTML='<div class="ttl">[ RÉSULTATS ]<\/div>'+(h?'<div class="car wrap">'+h+'<\/div>':'<p>Aucun produit trouvé.<\/p>');
+ r.innerHTML='<div class="ttl">[ RÉSULTATS ]</div>'+(h?'<div class="car wrap">'+h+'</div>':'<p>Aucun produit trouvé.</p>');
 }
 var MN=[["souris","SOURIS"],["clavier","CLAVIERS"],["tapis","TAPIS DE SOURIS"],["casque","CASQUES & AUDIO"],["pack","PACK INFLUENCEUR"],["info","INFOS & AIDE"]],mh="";
 var isApp=(window.matchMedia&&matchMedia("(display-mode: standalone)").matches)||navigator.standalone;if(!isApp)MN.push(["install","INSTALLER L’APPLI"]);
-MN.forEach(function(m){mh+='<div class="mi" onclick="go2(\''+m[0]+'\')"><span>'+m[1]+'<\/span><i>›<\/i><\/div>'});
+MN.forEach(function(m){mh+='<div class="mi" onclick="go2(\''+m[0]+'\')"><span>'+m[1]+'</span><i>›</i></div>'});
 $("mi").innerHTML=mh;
 ann(0);setInterval(function(){ann(1)},4000);cdTick();setInterval(cdTick,1000);thmR();
 setInterval(function(){if(!cur)return;P.forEach(function(x){if(x.cols.length>1&&!(lk[x.id]>Date.now())){idx[x.id]=((idx[x.id]||0)+1)%x.cols.length;upd(x.id)}})},3000);
@@ -805,34 +764,11 @@ window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dip
 window.addEventListener("appinstalled",function(){dip=null;toast("✓ Application installée")});
 function installApp(){
  if(dip){dip.prompt();dip.userChoice.then(function(){dip=null});return}
- $("pbox").innerHTML='<h3>📲 Installer l’application<\/h3><p><b>iPhone (Safari) :<\/b> appuyez sur le bouton Partager ⬆️, puis sur « Sur l’écran d’accueil ».<\/p><p><b>Android (Chrome) :<\/b> appuyez sur le menu ⋮ en haut à droite, puis sur « Installer l’application » ou « Ajouter à l’écran d’accueil ».<\/p>';
+ $("pbox").innerHTML='<h3>📲 Installer l’application</h3><p><b>iPhone (Safari) :</b> appuyez sur le bouton Partager ⬆️, puis sur « Sur l’écran d’accueil ».</p><p><b>Android (Chrome) :</b> appuyez sur le menu ⋮ en haut à droite, puis sur « Installer l’application » ou « Ajouter à l’écran d’accueil ».</p>';
  $("pov").classList.add("on");
 }
 try{if("serviceWorker" in navigator&&location.protocol.indexOf("http")==0){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}}catch(e){}
 boot();
-<\/script>
-<\/body>
-<\/html></script>
-<script>
-var code=document.getElementById("src").textContent.replace(/<\\\//g,"</");
-if(code.charAt(0)==="\n")code=code.slice(1);
-function fmt(n){return n.toLocaleString("fr-FR")}
-document.getElementById("n1").textContent=fmt(code.length);
-document.getElementById("n2").textContent=fmt(Math.round(new Blob([code]).size/1024));
-document.getElementById("n3").textContent=fmt(code.split("\n").length);
-document.getElementById("pv").textContent=code.slice(0,900)+"\n…";
-async function copyAll(){
- var ok=false,m=document.getElementById("msg");
- try{await navigator.clipboard.writeText(code);ok=true}catch(e){}
- if(!ok){
-  try{
-   var t=document.createElement("textarea");t.value=code;t.setAttribute("readonly","");
-   t.style.cssText="position:fixed;left:-9999px;top:0;opacity:0";document.body.appendChild(t);
-   t.select();t.setSelectionRange(0,code.length);ok=document.execCommand("copy");document.body.removeChild(t);
-  }catch(e){}
- }
- m.textContent=ok?"✅ Code copié : "+fmt(code.length)+" caractères":"❌ Copie bloquée par le navigateur. Utilisez plutôt le fichier à télécharger dans la discussion.";
-}
 </script>
 </body>
 </html>
