@@ -663,3 +663,4 @@ function showGate(m){$("gate").style.display="flex";document.body.style.overflow
 function hideGate(){if(!cur){enterGuest();return}$("gate").style.display="none";document.body.style.overflow=""}
 function enterGuest(){var g=ld("mg_guest")||{};cart=g.cart||{};idx=g.idx||{};sel=g.sel||{};promo=g.promo||"";ship=(g.ship&&g.ship.ville)?g.ship:{ville:"Bamako",adr:"",tel:"",note:""};fav=g.fav||{};orders=[];cur=null;enter()}
 function mergeGuest(){var g=ld("mg_guest");if(!g||!g.cart)return;Object.keys(g.cart).forEach(function(k){var o=g.cart[k];if(cart[k])cart[k].q+=o.q;else cart[k]=o});Object.keys(g.fav||{}).forEach(function(k){fav[k]=1});rm("mg_guest")}
+boot();</script></body></html>
